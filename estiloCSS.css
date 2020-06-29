@@ -1,0 +1,46 @@
+/* //JavaScript Angel Alberto May Catzin */
+h1{
+    font-weight: 70px;
+    font-size: 70px;
+    text-transform: uppercase;
+    border-top: 15px solid;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color:cornsilk;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    align-self: center;
+    
+  }
+input{
+    background-color: brown;
+    padding: 10px;
+    align-content: center;
+    height: 40px;
+
+}
+
+.textarea{
+    align-content: center;
+    text-align: center;
+    border-color: brown;
+    border-width: 5px;
+    background-color: burlywood;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    font-weight: bold;
+}
+section{
+    margin-left: 850px;
+    margin-right: 850px;
+}
+
+#datos{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    font-weight: bold;
+}
