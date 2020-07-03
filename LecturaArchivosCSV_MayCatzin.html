@@ -11,15 +11,19 @@
 
 <body>  
     <h1>Lectura de Archivos CSV</h1> 
-    <h3 style="padding-left: 850px; font-size: 15pt;">Arrastre un archivo a "Seleccionar un archivo" o haga click</h2> 
+    <p id="error"></p>
     <script type="text/javascript" src="functions.js"></script>
     <section >
-        <input type="file" id="archivo" accept=".csv" required  ><br>
+        <h3 style="padding-left: 8px; font-size: 15pt;">Arrastre un archivo al <strong>Rectangulo Punteado</strong> o de clic en <strong> Seleccionar Archivo</strong></h3>
+        <input type="file" id="archivo" ><br>
         <textarea class="textarea" rows="10" cols="50" id="editor">
+            Área de contenido
         </textarea>
         <br>
         <p id="datos" >
         </p>
+        <br>
+        <button class="Limpiar" onClick="window.location.reload();">Limpiar datos</button>
     </section> 
 </body>
 </html>

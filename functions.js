@@ -1,8 +1,24 @@
 //JavaScript Angel Alberto May Catzin
-
+    
+//---------------Funciones para Seleccionar un archivo o Arrastrar un archivo---------------------------//
+//En la función inicio registramos el evento change del control de tipo file que se disparará
+//cuando el usuario seleccione un archivo del disco duro o arrastre un archivo
 window.addEventListener('load', inicio, false);
 function inicio() {
-    document.getElementById('archivo').addEventListener('change', cargar, false);               
+    document.getElementById('archivo').addEventListener('change', getFile);
+    function getFile(ev) {
+        var files = event.target.files
+            , file = files[0];
+        var name = file.name;
+        var extensionName = name.substr(-4);
+        console.log(extensionName);
+        if ( extensionName == '.csv'){
+            addEventListener('change', cargar, false); 
+        } else{
+            document.getElementById("error").innerHTML="Error: Usted selecciono un Archivo Inválido. Seleccione uno válido";
+            setTimeout('document.location.reload()',4000);
+        }
+      } 
 }
 
 function cargar(ev) {
@@ -16,4 +32,7 @@ function cargar(ev) {
 
 function leer(ev) {
     document.getElementById('editor').value=ev.target.result;
+  
 }
+
+  

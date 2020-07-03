@@ -1,4 +1,4 @@
-/* //JavaScript Angel Alberto May Catzin */
+/* //CSS Angel Alberto May Catzin */
 h1{
     font-weight: 70px;
     font-size: 70px;
@@ -17,30 +17,56 @@ body{
     
   }
 input{
-    background-color: brown;
-    padding: 10px;
+    font-size: 14pt;
+    background-color:white;
     align-content: center;
-    height: 40px;
-
+    border-style: dashed;
+    height: 140px;
+    width: 600px;
+    border-color: brown ;
+    border-width: 6px;
 }
 
 .textarea{
     align-content: center;
     text-align: center;
     border-color: brown;
-    border-width: 5px;
+    border-width: 10px;
     background-color: burlywood;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 14pt;
+    font-size: 18pt;
     font-weight: bold;
+    height: 600px;
+    width: 900px;
+}
+.Limpiar{
+    margin: 3px;
+    padding: 20px 25px;
+    background-color: burlywood;
+    text-align: center;
+    font-size: 16px ;
+    font-weight: bold;
+    color: brown;
+    border: 5px solid;
+    border-color: brown;
+    border-width: 7px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 section{
-    margin-left: 850px;
-    margin-right: 850px;
+    position: absolute;
+    margin-left: 500px;
+    margin-right: 500px; 
 }
 
 #datos{
     font-family: 'Times New Roman', Times, serif;
     font-size: 14pt;
+    font-weight: bold;
+}
+#error{
+    text-align: center;
+    color: red;
+    font-size: 40pt;
     font-weight: bold;
 }
