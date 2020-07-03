@@ -1,8 +1,6 @@
 //JavaScript Angel Alberto May Catzin
     
 //---------------Funciones para Seleccionar un archivo o Arrastrar un archivo---------------------------//
-//En la función inicio registramos el evento change del control de tipo file que se disparará
-//cuando el usuario seleccione un archivo del disco duro o arrastre un archivo
 window.addEventListener('load', inicio, false);
 function inicio() {
     document.getElementById('archivo').addEventListener('change', getFile);
