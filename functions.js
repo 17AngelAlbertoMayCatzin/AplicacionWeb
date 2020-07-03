@@ -5,11 +5,11 @@ window.addEventListener('load', inicio, false);
 function inicio() {
     document.getElementById('archivo').addEventListener('change', getFile);
     function getFile(ev) {
-        var files = event.target.files
+        var files = ev.target.files
             , file = files[0];
         var name = file.name;
         var extensionName = name.substr(-4);
-        console.log(extensionName);
+       
         if ( extensionName == '.csv'){
             addEventListener('change', cargar, false); 
         } else{
